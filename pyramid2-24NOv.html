@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid 2</title>
+</head>
+
+<body>
+    <script>
+        var n = prompt("Enter a number");
+        n = parseInt(n);
+        let string = "";
+        //External loop
+        for (let i = 0; i <= n; i++) {
+            //Internal loop
+            for (let j = 0; j < i; j++) {
+                string += "*";
+
+            }
+            string += "\n";
+        }
+
+        for (let i = 1; i <= n - 1; i++) {
+            //Internal loop
+            for (let j = 0; j < n - i; j++) {
+                string += "*";
+
+            }
+            string += "\n";
+        }
+        console.log(string)
+    </script>
+    pyramid 2 program
+</body>
+
+</html>
